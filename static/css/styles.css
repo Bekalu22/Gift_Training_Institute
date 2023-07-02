@@ -1,0 +1,254 @@
+body {margin: 0;}
+
+ul.sidenav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+ul.sidenav li a {
+  display: block;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: width 2s;
+}
+ 
+ul.sidenav li a.active {
+
+  color: white;
+}
+
+ul.sidenav li a:hover:not(.active) {
+  border: 2px solid gray;
+  background-color: #777;
+  color: white;
+  font-size: 25px;
+  padding: 12px 20px;
+
+}
+
+div.content {
+  margin-left: 25%;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+h2.titles{
+  margin-left: 25%; color: darkblue; font-size: 3vw;
+}
+
+p.ser{
+  font-size: 2vw; text-align: center;
+}
+
+h1.her{
+  color:white;
+  font-size:6vw;
+}
+h2.her{
+  color:rgb(185, 179, 179);
+  font-size: 3vw;
+}
+
+h3.ski{
+  color: rgb(12, 12, 106); font-size: 3vw;
+}
+p.ski{
+  color: rgb(12, 12, 106); font-size: 2vw;
+}
+@media screen and (max-width: 1500px) {
+  ul.sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  ul.sidenav li a {
+    float: right;
+    padding-right: 15px;
+  }
+  
+  div.content {margin-right: 30;}
+}
+
+@media screen and (max-width: 400px) {
+  ul.sidenav li a {
+    text-align: center;
+    float: none;
+  }
+}
+
+
+.nav{
+    background-color: rgb(55,81,126);
+}
+
+
+.column {
+    float: left;
+    width: 47%;
+    padding-left: 70px;
+    background-color: rgb(55,81,126) ;
+  }
+  
+  h1.head{
+    letter-spacing: 4px;
+    display: inline-block; color: white;
+  }
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+
+    h3.ski{
+      color: rgb(12, 12, 106); font-size: 4.5vw;
+    }
+    p.ski{
+      color: rgb(12, 12, 106); font-size: 3vw;
+    }
+    h2.titles{
+      margin-left: 25%; color: darkblue; font-size: 6vw;
+    }
+
+    p.ser{
+      font-size: 4vw; text-align: center;
+    }
+
+    h1.her{
+      color:white;
+      font-size:10vw;
+  }
+  h2.her{
+      color:rgb(185, 179, 179);
+      font-size: 6vw;
+  }
+  }
+
+
+
+
+div.About p{
+    margin-left: 7%;
+    font-size: 2vw;
+    margin-right: 7%;
+}
+
+div.perf{
+    font-size: 2vw;
+    color: rgb(6, 6, 41);
+}
+
+
+div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 99%;
+      margin: 6px 0;
+    }
+
+div.About p{
+  margin-left: 10%;
+  font-size: 4vw;
+}
+
+div.perf{
+  font-size: 4vw;
+  color: rgb(6, 6, 41);
+  margin-left: 50px;
+}
+
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+
+
+
+
+  /* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+div#footer{
+  display: block;
+  background-color: rgba(0,0,255,0.7);
+  padding: 20px;
+  
+}
+
+div#fulls a{
+  background-color: #777;
+  color: white;
+  padding: 7px 10px;
+  text-decoration: none;
+}

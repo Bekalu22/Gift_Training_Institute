@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>student</title>
+
+  <link href="/static/css/style.css" rel="stylesheet">
+ 
+</head>
+<body>
+
+
+<form style="margin-left:50" action = "{{ url_for('addrec') }}" method = "POST">
+        <div class="container mt-3">
+  <div style="background-color:blue;">
+    <h1 style="text-align:center; padding:40px; margin:20px; color:white">Student informations</h1>
+</div>
+    <div class="form-check mb-3">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Gender</label> <br>
+                  &nbsp; &nbsp; &nbsp; <input type="radio" id="male" name="gender" value="Male">
+                  <label for="male">Male</label><br><br>
+                  &nbsp; &nbsp; &nbsp;  <input type="radio" id="female" name="gender" value="Female">
+                  <label for="female">Female</label>
+                </div><br>
+
+                <div class="form-group col-md-6">
+                  <label for="name">Your Age</label>
+                  <input type="number" class="form-control" name="age" id="age" required>
+                </div><br>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+<br>
+              <div class="form-group">
+                <label for="name">Subject/ course name</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+<br>
+              <div class="form-group">
+                <label for="name">when you want to start a class</label>
+                <input type="date" class="sdate" name="sdate" id="sdate" required>
+              </div>
+<br>
+              <div class="form-group">
+                <label for="name">Any extra information or comment</label>
+                <textarea class="form-control" name="message" rows="3" required></textarea>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+      </form>
+
+</body>
+</html>
