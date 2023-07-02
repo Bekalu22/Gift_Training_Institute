@@ -9,5 +9,4 @@ To develop a computer based software system to provide the following for the cou
 •  Reduce administrative cost
 •  Reduce the paper driven aspects of the existing system
 
-
-This Project can be used for various purposes, such as student registration, making payments, accessing student enrollment forms, accessing school records, and updating necessary information.
+I use HTML and CSS for front end development, Python programming, SQLite Database system and flask framework.
